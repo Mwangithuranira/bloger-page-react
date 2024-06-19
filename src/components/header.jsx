@@ -1,5 +1,6 @@
 import  { useState } from 'react';
 import '../App.css';
+// this is the header component
 
 const Header = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
