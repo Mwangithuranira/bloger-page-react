@@ -1,29 +1,79 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
-  
   margin: 2rem;
   padding: 1rem;
   text-align: center;
-  
 }
 
 
 
+h2 {
+  margin-left: 1em;
+  font-size: 3em;
+  color: rgb(209, 204, 204);
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2em;
+  margin-left: 1em;
+  line-height: 1.1em;
+  color: rgb(10, 8, 8);
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-left: 1em;
+  line-height: 1.1em;
+  color: rgb(7, 6, 6);
+}
+
+h5 {
+  font-size: 2.8em;
+  font-weight: 500;
+  margin-left: 1em;
+  line-height: 1.1em;
+  color: rgb(214, 210, 210);
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 400;
+  margin-left: 1em;
+  line-height: 1.1em;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Main Section */
 .main {
-  background-color: rgb(182, 47, 47);
+  background-color: rgb(189, 30, 30);
   margin-bottom: 2rem;
   text-align: center;
-  padding: 50px;
+  border-bottom-left-radius: 5rem;
 }
 
+/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 25px;
 }
 
 .headercontent {
   display: flex;
+  margin-left: 3rem;
 }
 
 .headercontent ul {
@@ -49,102 +99,44 @@
 
 .headercontent ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(207, 190, 190);
 }
 
-.headers button {
+.header button {
   margin-left: 10px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   cursor: pointer;
 }
 
-.color {
-  color: gray;
-}
-
-
-li {
-  list-style-type: none;
-}
-h2 {
-  font-size: 3em;
-  line-height: 1.1em;
-  margin-left: 1em;
-  color: white;
-}
-h3{
-  font-size: 2em;
-  line-height: 1.1em;
-  margin-left: 1em;
-
-}
-h4{
-  font-size: 1.5em;
-  line-height: 1.1em;
-  margin-left: 1em;
-
-
-}
-h5{
-  font-size: 2.8em;
-  line-height: 1.1em;
-  margin-left: 1em;
-  font-weight: 500;
-  color: white;
-
-}
-h6{
-  font-size: 1em;
-  line-height: 5px;
-  font-weight: 400;
-  color: white;
-}
-.header {
-  display: flex;
-  flex-direction: row ;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.headercontent {
-  display: flex;
-  flex-direction: row ;
-  
- 
-  margin-left: 3rem;
-}
-
+/* Footer */
 .footer {
   display: flex;
-  flex-direction: row ;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(9, 9, 31);
-
+  border-top-right-radius: 5rem;
+  margin-top: 3rem;
 }
 
-.futurecontent,.blogerdetails,.infrastructure {
+/* Future Content and Blogger Details */
+.futurecontent, .blogerdetails {
   display: flex;
-  flex-direction: row ;
   justify-content: space-between;
-  
   margin-left: 7rem;
-
 }
 
-.card{
+/* Card */
+.card {
   color: rgb(18, 18, 56);
+  padding: 2em;
 }
-.color{
+
+/* Color Class */
+.color {
   color: white;
-
 }
 
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-}
-
+/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -160,6 +152,7 @@ body {
 }
 
 .dropbtn:hover, .dropbtn:focus {
+  color: blue;
   background-color: #ad1a06;
 }
 
@@ -168,36 +161,194 @@ body {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: rgb(224, 211, 211);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #741414;
 }
 
 .show {
   display: block;
 }
 
+/* Infrastructure */
+.infrastructure {
+  background-color: rgb(16, 16, 61);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 
+/* Reduced Motion Preference */
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
-  padding: 2em;
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header, .headercontent, .footer, .futurecontent, .blogerdetails, .infrastructure {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .header button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .main {
+    border-bottom-left-radius: 3rem;
+  }
+
+  .footer {
+    margin-top: 2rem;
+  }
+
+  .infrastructure {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
-.read-the-docs {
-  color: #888;
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+  }
+
+  h5 {
+    font-size: 2.2em;
+  }
+
+  .headercontent ul {
+    margin: 0 10px;
+  }
+
+  .headercontent ul h6 {
+    font-size: 0.9em;
+  }
+
+  .header button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
+  h5 {
+    font-size: 1.8em;
+  }
+
+  .headercontent ul {
+    margin: 0 5px;
+  }
+
+  .header button {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 0.75em;
+  }
+
+  h5 {
+    font-size: 1.5em;
+  }
+
+  .headercontent ul {
+    margin: 0 2px;
+  }
+
+  .header button {
+    padding: 4px 8px;
+  }
+}
+@media (max-width:150){
+  .headercontent ul {
+    margin: 0 2px;
+  }
+
+  .header button {
+    padding: 4px 8px;
+  }
+
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #213547;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #a30b0b;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Keyframes */
+@keyframes header-slide {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

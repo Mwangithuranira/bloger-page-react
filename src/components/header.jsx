@@ -44,7 +44,7 @@ const Header = () => {
                 <>
                   <li><a href="">Contact</a></li>
                   <li><a href="">Newsletter</a></li>
-                  <li><a href="">LinkedIn</a></li>
+                  <li><a href="https://www.linkedin.com/feed/">LinkedIn</a></li>
                 </>
               )}
             </ul>

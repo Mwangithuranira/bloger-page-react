@@ -4,7 +4,7 @@ const future = () => {
         <>
 <div className="future">
   
-    <h3>Designed for the future</h3>
+    <h4 >Designed for the future</h4>
 <div className="futurecontent">
 <div className="futuredetails">
 
@@ -18,7 +18,7 @@ const future = () => {
 <p>  Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
 </div>
 
-<img src="./images/illustration-editor-desktop.svg" alt="editor" width={700} height={600} />
+<img src="./images/illustration-editor-desktop.svg" alt="editor" width={600} height={500} />
 </div>
 </div>
  </>

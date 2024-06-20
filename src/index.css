@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  margin-bottom: 2rem;
   color-scheme: light dark;
   color: rgba(26, 24, 24, 0.87);
   background-color: #f5eaea;
@@ -21,7 +21,7 @@ a:hover {
 }
 
 body {
-  margin: 2 rem;
+  margin: 0rem;
   display: flex;
   flex-direction: column ;
   place-items: center;
